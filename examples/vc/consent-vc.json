@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "type": ["VerifiableCredential", "HealthDataConsent"],
+  "issuer": "did:key:z6Mkr6yWqXexampleIssuer",
+  "issuanceDate": "2025-08-23T12:00:00Z",
+  "credentialSubject": {
+    "id": "did:key:z6MkpatientExample",
+    "purpose": "FHIR Patient.read Observation.read",
+    "scope": "nutrition mental-wellness non-PHI",
+    "expires": "2026-08-23T12:00:00Z",
+    "controller": "did:key:z6MkcontrollerExample"
+  },
+  "credentialStatus": {
+    "id": "https://status.example.org/list/123#3",
+    "type": "StatusList2021Entry",
+    "statusPurpose": "revocation",
+    "statusListIndex": "3",
+    "statusListCredential": "https://status.example.org/list/123"
+  }
+}
