@@ -1,0 +1,16 @@
+{
+  "id": "health-consent-pd",
+  "input_descriptors": [
+    {
+      "id": "consent-vc",
+      "constraints": {
+        "fields": [
+          {
+            "path": ["$.type"],
+            "filter": { "type": "array", "contains": { "const": "HealthDataConsent" } }
+          }
+        ]
+      }
+    }
+  ]
+}
